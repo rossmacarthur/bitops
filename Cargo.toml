@@ -1,0 +1,13 @@
+[package]
+name = "bitops"
+version = "0.1.0"
+authors = ["Ross MacArthur <macarthur.ross@gmail.com>"]
+license = "Apache-2.0/MIT"
+description = "Miscellaneous bit operations for any Integer."
+keywords = ["bit", "flag", "integer", "mask"]
+readme = "README.md"
+homepage = "https://github.com/rossmacarthur/bitops"
+repository = "https://github.com/rossmacarthur/bitops"
+
+[dependencies]
+num-integer = "0.1"
