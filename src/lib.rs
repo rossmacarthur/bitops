@@ -5,10 +5,9 @@
 //! [`Integer`]: ../num_integer/trait.Integer.html
 //! [`BitOps`]: ./trait.BitOps.html
 
-extern crate num_integer;
+use std::ops::{BitAnd, Shl, Shr};
 
 use num_integer::Integer;
-use std::ops::{BitAnd, Shl, Shr};
 
 /// Miscellaneous bit operations for any [`Integer`].
 ///
@@ -99,15 +98,14 @@ pub trait BitOps:
 }
 
 /// Implements the [`BitOps`] trait for all types that meet the requirements.
-impl<N> BitOps for N
-where
-    N: Copy + Integer + BitAnd<Output = Self> + Shl<Output = Self> + Shr<Output = Self> + From<u8>,
+impl<N> BitOps for N where
+    N: Copy + Integer + BitAnd<Output = Self> + Shl<Output = Self> + Shr<Output = Self> + From<u8>
 {
 }
 
+#[cfg(test)]
 mod tests {
-    #[allow(unused_imports)]
-    use super::BitOps;
+    use super::*;
 
     #[test]
     fn flag_zero() {

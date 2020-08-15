@@ -2,12 +2,13 @@
 name = "bitops"
 version = "0.1.0"
 authors = ["Ross MacArthur <macarthur.ross@gmail.com>"]
-license = "Apache-2.0/MIT"
+edition = "2018"
 description = "Miscellaneous bit operations for any Integer."
-keywords = ["bit", "flag", "integer", "mask"]
 readme = "README.md"
 homepage = "https://github.com/rossmacarthur/bitops"
 repository = "https://github.com/rossmacarthur/bitops"
+license = "MIT OR Apache-2.0"
+keywords = ["bit", "flag", "integer", "mask"]
 
 [dependencies]
 num-integer = "0.1"
